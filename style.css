@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap'); 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #EEEEEE;
+}
+
+nav{
+    padding: 20px;
+    background-image: linear-gradient(#000 40%,transparent);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+nav .logo img{
+    height: 60px;
+}
+
+.hero{
+    background-image: url(./assests/heroCover.jpg);
+    background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: calc();
+    transform: translateY(-70px);
+    padding-top: 150px;
+}
+
+.btn-holder-hero button{
+    padding: 10px 30px;
+    background-color: #fff;
+    border: 2px solid #ffff;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-holder-hero button:hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+.hero-content{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    text-shadow: 5px 5px 10px #000;
+}
+
+
+.explore-more .view-more{
+    border-radius: 0;
+    padding: 30px;
+    font-size: 1.3rem;
+    border: none;
+}
+
+.explore-more .view-more:hover{
+    background-color: #8f2121;
+    color: #fff;
+}
+
+.input{
+    padding: 10px;
+    width: 50%;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    border-bottom: 4px solid #CF0A0A;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+#submit{
+    padding: 10px 30px;
+    border: 2px solid #CF0A0A;
+    background-color: #CF0A0A;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+
+
+
+@media only screen and (max-width:600px) {
+    nav{
+        flex-direction: column;
+        position: static;
+        background: #fff;
+    }
+
+    nav .logo , nav .btn-holder-hero{
+        text-align: center;
+    }
+
+    nav .btn-holder-hero button{
+        background-color: #000;
+        color: #fff;
+        border-color: #000;
+    }
+
+    .hero{
+        transform: none;
+        height: auto;
+        padding: 100px 0;
+    }
+
+    .hero-content{
+        font-size: 1.5rem;
+    }
+
+    .input-holder input{
+       display: block;
+       margin: 10px auto;
+       width: 90%;
+    }
+
+    #submit{
+        width: 90%;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./singleHero.css">
+    <link rel="stylesheet" href="../card.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- mainwrap gives required width according to screen width used for responsivness -->
+    <div class="mainWrap">
+
+        <!-- nav for navigating withing pages -->
+        <nav>
+            <div class="logo">
+                <img src="../assests/marvelLogo.jpg">
+            </div>
+            <div class="btn-holder-hero">
+                <a href="../index.html"><button>Home</button></a>
+                <a href="../favrouties/favrouties.html"><button>Favourites</button></a>
+                <button id="fav-btn" data-id="" class="add-to-favourites">Add to Favourites</button>
+            </div>
+        </nav>
+
+         <!-- top section with hero image and information -->
+        <div class="hero">
+            
+        </div>
+
+         <!-- div to append hero comic cards afetr fetching them for server -->
+        <div class="section comicsSection" id="comicsSection">
+            <p class="heading">Comics</p>
+            <div class="cards-holder cards-holder-comics collaps">
+                <div class="view-more-div" id="view-more-comics">View All</div>
+            </div>
+        </div>
+
+         <!-- div to append event cards afetr fetching them for server -->
+        <div class="section eventSection" id="eventSection">
+            <p class="heading">Events</p>
+            <div class="cards-holder cards-holder-events collaps">
+                <div class="view-more-div" id="view-more-events">View All</div>
+            </div>
+        </div>
+
+         <!-- div to append series cards afetr fetching them for server -->
+        <div class="section seriesSection" id="seriesSection">
+            <p class="heading">Series</p>
+            <div class="cards-holder cards-holder-series collaps">
+                <div class="view-more-div" id="view-more-series">View All</div>
+            </div>
+        </div>
+
+        <!-- more details button div to goto marvel website for more information button is append by js -->
+        <div class="moreDetails">
+            
+        </div>
+    </div>
+
+      <!-- required js -->
+    <script src="../printCards.js"></script>
+    <script src="../addToFavroties.js"></script>
+    <script src="./singleHero.js"></script>
+</body>
+</html>

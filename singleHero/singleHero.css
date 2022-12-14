@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap'); 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #EEEEEE;
+}
+
+.mainWrap{
+    width: 95%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+nav .logo img{
+    height: 60px;
+}
+
+.hero{
+    background-color: #000;
+    height: 80vh;
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+.hero .left img{
+    border-radius: 10px;
+    width: 500px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 30px 10px #00000050;
+}
+
+.hero .right{
+    width: 50%;
+    padding-left:30px;
+    padding-top: 20px;
+}
+
+.hero .right h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero .text{
+    line-height: 1.5rem;
+    color: #000;
+}
+.btn-holder-hero button{
+    padding: 10px 30px;
+    background-color: #000;
+    border: 2px solid #000;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.btn-holder-hero button:hover{
+    background-color: transparent;
+    color: #000;
+}
+.infoBox{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CF0A0A;
+    margin:10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.infoButton{
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    color: #CF0A0A;
+    font-weight: 800;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.infoButton:hover{
+    background-color: #ffffff90;
+}
+
+.dicsBox{
+    background-color: #eee;
+    padding: 20px 10px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 30px 10px#00000040;
+}
+
+.disc{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.comicsSection{
+    padding-top: 120px;
+}
+
+.heading{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.comicsSection{
+    margin-top: 120px;
+}
+.cards-holder.cards-holder-comics,
+.cards-holder.cards-holder-events,
+.cards-holder.cards-holder-series{
+    transform: none;
+    justify-content: flex-start;
+}
+
+.cards-holder{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.cards-holder .card{
+    margin-right: 0.8%;
+}
+
+.view-more-div{
+    position: absolute;
+    z-index: 99;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 20px;
+    bottom: 0px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 900;
+    background-image: linear-gradient(transparent , #000);
+}
+
+.cards-holder.collaps{
+    height: 600px;
+}
+
+.moreDetails{
+    margin-bottom: 50px;
+}
+
+.moreDetails button{
+    width: 100%;
+    padding: 20px;
+    background-color: #CF0A0A;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.moreDetails button:hover{
+    background-color: #a52020;
+}
+
+.btn-holder-hero .add-to-favourites{
+    background-color: #CF0A0A;
+    border-color: #CF0A0A;
+}
+
+.btn-holder-hero .add-to-favourites:hover{
+    color: #CF0A0A;
+}
+
+#hero-id{
+    font-size: 1px;
+    opacity: 0;
+}
+#stories{
+    opacity: 0.5;
+}
+@media only screen and (max-width:915px){
+    .mainWrap{
+        width: 100%;
+    }
+
+    .hero{
+        padding: 30px 10px;
+        border-radius: 0px;
+    }
+    .section{
+        margin: 0 20px;
+    }
+}
+
+@media only screen and (max-width:850px){
+   
+    .logo{
+        display: none;
+    }
+    .hero{
+        flex-direction: column;
+        height: 100%;
+        max-height: none;
+    }
+
+    .hero .left , .hero .right{
+        width: 100%;
+        text-align: center;
+    }
+    .hero .right{
+        padding: 20px;
+    }
+
+    .comicsSection{
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .btn-holder-hero .add-to-favourites{
+        margin-top: 10px;
+    }
+
+    .hero .left img{
+        width: 95%;
+    }
+}

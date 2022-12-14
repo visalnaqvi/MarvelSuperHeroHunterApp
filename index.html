@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./card.css">
+    <title>Marvel Super Hero Hunter App</title>
+</head>
+<body>
+    <!-- nav for navigating withing pages -->
+    <nav>
+        <div class="logo">
+            <img src="./assests/marvelLogo.jpg">
+        </div>
+        <div class="btn-holder-hero">
+            <a href="#"><button>Home</button></a>
+            <a href="./favrouties/favrouties.html"><button>Favourites</button></a>
+        </div>
+    </nav>
+    <!-- top section with background image and search bar -->
+    <div class="hero">
+       
+        <div class="hero-content">
+            <h1>Super Hero Hunter App</h1>
+            <div class="input-holder">
+                <input class="input" id="search" placeholder="Search Your Hero">
+                <button id="submit">Search</button>
+            </div>
+        </div>
+    </div>
+    <!-- div to append hero cards afetr fetching them for server -->
+    <div class="cards-holder">
+
+        <!-- html template for signle card -->
+        <!-- <div class="card">
+            <div class="top">
+                <img src="./assests/heroCover.jpg">
+                 <p class="name">Hero Name</p>
+                <div class="content-holder">
+                    <div class="left">
+                        <p class="text">Comics: <span id="comics"></span></p>
+                        <p class="text">Events: <span id="comics"></span></p>
+                    </div>
+                    <div class="right">
+                        <p class="text">Series: <span id="comics"></span></p>
+                        <p class="text">Stories: <span id="comics"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+               
+                <button class="view-more">View More Details</button>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- button to load more cards initally app loads only 20 cards -->
+    <div class="explore-more">
+        <button id="exploreMore" class="view-more">Explore More</button>
+    </div>
+
+    <!-- required js -->
+    <script src="./printCards.js"></script>
+    <script src="./addToFavroties.js"></script>
+    <script src="./app.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        const firebaseConfig = {
+          apiKey: "AIzaSyA53jayAIfdO2njuZxqJoZsg5KnJcw4LW8",
+          authDomain: "visal-projects.firebaseapp.com",
+          projectId: "visal-projects",
+          storageBucket: "visal-projects.appspot.com",
+          messagingSenderId: "637776269001",
+          appId: "1:637776269001:web:cf47412605acb339928718",
+          measurementId: "G-JSEHD83FMN"
+        };
+        const app = initializeApp(firebaseConfig);
+      </script>
+</body>
+</html>
